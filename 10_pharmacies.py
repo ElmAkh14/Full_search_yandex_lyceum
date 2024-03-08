@@ -3,7 +3,6 @@ from io import BytesIO
 import sys
 from PIL import Image
 from json import dump
-import math
 
 
 search_api_server = "https://search-maps.yandex.ru/v1/"  # запрос API Поиска по организациям
