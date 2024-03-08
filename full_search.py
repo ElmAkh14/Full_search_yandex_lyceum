@@ -6,7 +6,7 @@ from PIL import Image
 
 def find_parameters_for_map(json_resp, l='map'):
     # Получаем первый топоним из ответа геокодера.
-    toponym = json_response["response"]["GeoObjectCollection"]["featureMember"][0]["GeoObject"]
+    toponym = json_resp["response"]["GeoObjectCollection"]["featureMember"][0]["GeoObject"]
     # Координаты центра топонима:
     toponym_coodrinates = toponym["Point"]["pos"]
     # Долгота и широта:
